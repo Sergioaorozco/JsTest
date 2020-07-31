@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteos Instagram</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Sorteo por Nombres al Azar</h1>
+        <h3>Escoge un ganador al azar de una <span class="spanh3">lista de nombres</span> con nuestra App</h3>
+            <textarea class="participants1" placeholder="Ingresa los nombres aquí. Cada nombre debe estar separado por un salto de linea" name="participants" id="lottext" cols="30" rows="9"></textarea>
+            <button onclick="alerta()" class="btnlot" id="sorteadosSubmit">Comenzar</button>
+            <p id=random-name></p>
+            <input id="go" class="button-primary" type="submit" hidden>      
+    </div>
+    
+    <script src="give.js"></script>
+   
+</body>
+</html>

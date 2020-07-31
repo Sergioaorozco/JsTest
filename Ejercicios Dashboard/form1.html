@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form1-html</title>
+    <style>
+        body { text-align: center; }
+        input, button { font-size: 18px; }
+    </style>
+</head>
+<body>
+    <h1>¿Cómo te llamas?</h1>
+    <form action="/forms/hello">
+    <input id="name" type="text" name="nombre">
+    <button onclick="alerta()" type="submit">¡hola!</button>
+    <p id="texto"></p>
+    </form>    
+    <script>
+    function alerta() {
+    let opcion = document.getElementById("name").value           
+    let mensaje= ("Hola " + opcion)
+    document.getElementById("texto").innerHTML = mensaje
+    }
+          
+         
+  
+    </script>
+</body>
+</html>
